@@ -12,30 +12,39 @@ namespace FolderByPatternCreator
         {
             Console.WriteLine("Starting...");
 
-            if (args.Length == 2)
+            try
             {
-                var path = args[0];
-                var folderCreatePattern = args[1];
-
-                Console.WriteLine($"In Folder {path} creating sub folders with pattern {folderCreatePattern}.");
-
-                if (!String.IsNullOrEmpty(path) && Directory.Exists(path) && !String.IsNullOrEmpty(folderCreatePattern))
+                if (args.Length == 2)
                 {
-                    var processor = new PatternProcessor();
-                    var folders = processor?.Get(folderCreatePattern) ?? new List<string>();
-                    folders.ForEach(f =>
+                    var path = args[0];
+                    var folderCreatePattern = args[1];
+
+                    Console.WriteLine($"In Folder {path} creating sub folders with pattern {folderCreatePattern}.");
+
+                    if (!String.IsNullOrEmpty(path) && Directory.Exists(path) && !String.IsNullOrEmpty(folderCreatePattern))
                     {
-                        Task task = Task.Factory.StartNew(() => { CreateFolder(path, f); });
-                        task.Wait();
-                    });
+                        var processor = new PatternProcessor();
+                        var folders = processor?.Get(folderCreatePattern) ?? new List<string>();
+                        folders.ForEach(f =>
+                        {
+                            Task task = Task.Factory.StartNew(() => { CreateFolder(path, f); });
+                            task.Wait();
+                        });
+                    }
                 }
                 else
                 {
-                    //ex to do
+                    throw new CreatorInputDataException("Wrong number of parameters, missing input folder and pattern for creation");
                 }
             }
-
-            Console.WriteLine("Finished.");
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                Console.WriteLine("Finished.");
+            }
         }
 
         private static void CreateFolder(string path, string folderName)

@@ -20,3 +20,14 @@ C:\Dalibor\desarrollo\GitHubProjects\FolderByPatternCreator\obj\Debug\netcoreapp
 C:\Dalibor\desarrollo\GitHubProjects\FolderByPatternCreator\obj\Debug\netcoreapp3.1\FolderByPatternCreator.AssemblyInfo.cs
 C:\Dalibor\desarrollo\GitHubProjects\FolderByPatternCreator\obj\Debug\netcoreapp3.1\FolderByPatternCreator.dll
 C:\Dalibor\desarrollo\GitHubProjects\FolderByPatternCreator\obj\Debug\netcoreapp3.1\FolderByPatternCreator.pdb
+C:\temp\desarrollo\FolderByPatternCreator\bin\Debug\netcoreapp3.1\FolderByPatternCreator.exe
+C:\temp\desarrollo\FolderByPatternCreator\bin\Debug\netcoreapp3.1\FolderByPatternCreator.deps.json
+C:\temp\desarrollo\FolderByPatternCreator\bin\Debug\netcoreapp3.1\FolderByPatternCreator.runtimeconfig.json
+C:\temp\desarrollo\FolderByPatternCreator\bin\Debug\netcoreapp3.1\FolderByPatternCreator.runtimeconfig.dev.json
+C:\temp\desarrollo\FolderByPatternCreator\bin\Debug\netcoreapp3.1\FolderByPatternCreator.dll
+C:\temp\desarrollo\FolderByPatternCreator\bin\Debug\netcoreapp3.1\FolderByPatternCreator.pdb
+C:\temp\desarrollo\FolderByPatternCreator\obj\Debug\netcoreapp3.1\FolderByPatternCreator.csprojAssemblyReference.cache
+C:\temp\desarrollo\FolderByPatternCreator\obj\Debug\netcoreapp3.1\FolderByPatternCreator.AssemblyInfoInputs.cache
+C:\temp\desarrollo\FolderByPatternCreator\obj\Debug\netcoreapp3.1\FolderByPatternCreator.AssemblyInfo.cs
+C:\temp\desarrollo\FolderByPatternCreator\obj\Debug\netcoreapp3.1\FolderByPatternCreator.dll
+C:\temp\desarrollo\FolderByPatternCreator\obj\Debug\netcoreapp3.1\FolderByPatternCreator.pdb

@@ -8,30 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\lysak\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Adéla\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Dalibor\\desarrollo\\GitHubProjects\\FolderByPatternCreator\\FolderByPatternCreator.csproj",
+      "projectUniqueName": "C:\\temp\\desarrollo\\FolderByPatternCreator\\FolderByPatternCreator.csproj",
       "projectName": "FolderByPatternCreator",
-      "projectPath": "c:\\Dalibor\\desarrollo\\GitHubProjects\\FolderByPatternCreator\\FolderByPatternCreator.csproj",
-      "packagesPath": "C:\\Users\\lysak\\.nuget\\packages\\",
-      "outputPath": "c:\\Dalibor\\desarrollo\\GitHubProjects\\FolderByPatternCreator\\obj\\",
+      "projectPath": "C:\\temp\\desarrollo\\FolderByPatternCreator\\FolderByPatternCreator.csproj",
+      "packagesPath": "C:\\Users\\Adéla\\.nuget\\packages\\",
+      "outputPath": "C:\\temp\\desarrollo\\FolderByPatternCreator\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\lysak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Adéla\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
