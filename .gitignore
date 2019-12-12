@@ -1,0 +1,5 @@
+[Bb]in
+*.exe
+*.dll
+*.pdb
+*.cache
