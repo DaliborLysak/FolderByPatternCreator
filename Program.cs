@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace FolderByPatternCreator
 {
@@ -14,23 +10,13 @@ namespace FolderByPatternCreator
 
             try
             {
-                if (args.Length == 2)
+                if ((args.Length == 1) && (args[0].ToUpperInvariant().Equals("-TEST")))
                 {
-                    var path = args[0];
-                    var folderCreatePattern = args[1];
-
-                    Console.WriteLine($"In Folder {path} creating sub folders with pattern {folderCreatePattern}.");
-
-                    if (!String.IsNullOrEmpty(path) && Directory.Exists(path) && !String.IsNullOrEmpty(folderCreatePattern))
-                    {
-                        var processor = new PatternProcessor();
-                        var folders = processor?.Get(folderCreatePattern) ?? new List<string>();
-                        folders.ForEach(f =>
-                        {
-                            Task task = Task.Factory.StartNew(() => { CreateFolder(path, f); });
-                            task.Wait();
-                        });
-                    }
+                    FolderCreateProcessor.RunTests();
+                }                
+                else if (args.Length == 2)
+                {
+                    FolderCreateProcessor.CreateFolders(args[0], args[1]);
                 }
                 else
                 {
@@ -47,11 +33,5 @@ namespace FolderByPatternCreator
             }
         }
 
-        private static void CreateFolder(string path, string folderName)
-        {
-            var dirName = $"{path}{folderName}";
-            Directory.CreateDirectory(dirName);
-            Console.WriteLine($"Folder created: {dirName}");
-        }
     }
 }
