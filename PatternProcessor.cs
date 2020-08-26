@@ -42,14 +42,6 @@ namespace FolderByPatternCreator
             return items;
         }
 
-        private const int AlphabetLetterCount = 26;
-
-        private static IEnumerable<int> GetAlphabet()
-        {
-            var alphabet = Enumerable.Range('A', AlphabetLetterCount);
-            return alphabet.Concat(Enumerable.Range('a', AlphabetLetterCount));
-        }
-
         private static void ThrowSequenceDefinitionException(string symbol, Exception inner = null)
         {
             throw new SequenceDefinitionException($"Wrong sequence definition{symbol}, see documentation for correct definition", inner);
@@ -93,14 +85,13 @@ namespace FolderByPatternCreator
             }
             else
             {
-                // alphabet definition
-                var alphabet = GetAlphabet();
-                var xx = alphabet.Select(c => ((char)c).ToString()).ToList();
                 try
                 {
                     if (Char.TryParse(sequence[0], out char firstLatter) && Char.TryParse(sequence[1], out char lastLatter))
                     {
-                        sequenceList = alphabet.Where(l => (l >= firstLatter) && (l <= lastLatter)).Select(c => ((char)c).ToString()).ToList();
+                        //var alphabet = GetAlphabet(firstLatter > lastLatter);
+
+                        //sequenceList = alphabet.Where(l => (l >= firstLatter) && (l <= lastLatter)).Select(c => ((char)c).ToString()).ToList();
                     }
                 }
                 catch (Exception e)
