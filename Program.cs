@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleCommandHelper;
 
 namespace FolderByPatternCreator
 {
@@ -10,10 +11,11 @@ namespace FolderByPatternCreator
 
             try
             {
-                if ((args.Length == 1) && (args[0].ToUpperInvariant().Equals("-TEST")))
+                if ((args.Length == 1))
                 {
-                    FolderCreateProcessor.RunTests();
-                }                
+                    CommandService.TestMethod = FolderCreateProcessor.RunTests;
+                    var argument = CommandService.Execute(args[0]);
+                }
                 else if (args.Length == 2)
                 {
                     FolderCreateProcessor.CreateFolders(args[0], args[1]);
